@@ -1,0 +1,15 @@
+{
+  "name": "application-name",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app",
+    "test": "../test/api-easy test.js"
+  },
+  "dependencies": {
+    "underscore": "~1.5.2"
+  },
+  "pre-commit": [
+    "test"
+  ]
+}
