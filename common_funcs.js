@@ -1,4 +1,4 @@
-var _s = require('underscore');
+var __ = require('underscore');
 
 var existy = function(a){return a !=null};
 
@@ -13,7 +13,7 @@ var  doWhen = function(cond, action) {
 
 function executeIfHasField(target, name) {
   return doWhen(existy(target[name]), function() {
-    var result = _s.result(target, name); 
+    var result = __.result(target, name); 
     console.log(['The result is', result].join(' ')); 
     return result;
   }); 
